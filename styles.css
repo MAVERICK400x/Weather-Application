@@ -1,0 +1,113 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: #333;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* App Title */
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Styles */
+#location-form {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 10px;
+}
+
+#location-input {
+    padding: 12px;
+    font-size: 16px;
+    width: 260px;
+    border-radius: 20px;
+    border: 1px solid #555;
+    outline: none;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+#location-input:focus {
+    border-color: #ff6f61;
+    box-shadow: 0px 0px 8px rgba(255, 111, 97, 0.5);
+}
+
+/* Button Styling */
+button {
+    padding: 12px 18px;
+    font-size: 16px;
+    background: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #ff3b2f;
+    transform: scale(1.05);
+}
+
+/* Weather Container */
+#weather-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Weather Data Display */
+#weather-data {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    display: inline-block;
+    width: 320px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Weather Icon */
+#weather-icon {
+    width: 80px;
+    height: 80px;
+    margin: 10px auto;
+}
+
+/* Animations
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} */
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    #location-input {
+        width: 200px;
+    }
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+    #weather-data {
+        width: 280px;
+    }
+}
